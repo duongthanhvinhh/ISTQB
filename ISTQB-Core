@@ -1,0 +1,370 @@
+1. Software testing is a set of activities to discover defects and evaluate the quality of software artifacts. 
+   These artifacts, when being tested, are known as test objects
+   
+2. Testing not only involves verification, i.e., checking whether the system meets specified requirements, but also 
+   involves validation, which means checking whether the system meets users’ and other stakeholders’ 
+   needs in its operational environment   
+   
+3. The typical test objectives are:
+    • Evaluating work products such as requirements, user stories, designs, and code 
+    • Triggering failures and finding defects
+    • Ensuring required coverage of a test object
+    • Reducing the level of risk of inadequate software quality
+    • Verifying whether specified requirements have been fulfilled
+    • Verifying that a test object complies with contractual, legal, and regulatory requirements
+    • Providing information to stakeholders to allow them to make informed decisions
+    • Building confidence in the quality of the test object
+    • Validating whether the test object is complete and works as expected by the stakeholders   
+    
+4. Testing can trigger failures that are caused by defects in 
+   the software (dynamic testing) or can directly find defects in the test object (static testing). 
+   
+5. QC is a product-oriented, corrective approach that focuses on those activities supporting the achievement 
+    of appropriate levels of quality. Testing is a major form of quality control, while others include formal 
+    methods (model checking and proof of correctness), simulation and prototyping.
+    QA is a process-oriented, preventive approach that focuses on the implementation and improvement of 
+    processes. It works on the basis that if a good process is followed correctly, then it will generate a good 
+    product. QA applies to both the development and testing processes, and is the responsibility of everyone 
+    on a project.
+    Test results are used by QA and QC. In QC they are used to fix defects, while in QA they provide 
+    feedback on how well the development and test processes are performing.   
+    
+6. Human beings make errors (mistakes), which produce defects (faults, bugs), which in turn may result in failures  
+
+7. Testing Principles
+    • Testing shows the presence, not the absence of defects
+    • Exhaustive testing is impossible
+    • Early testing saves time and money
+    • Defects cluster together
+    • Tests wear out
+    • Testing is context dependent
+    • Absence-of-defects fallacy
+    
+8.  A test process usually consists of the main groups of activities as below:
+    • Test Planning: Define test objectives, select an appropriate approach to achieve the test objectives 
+    • Test monitoring and control: 
+    • Test analysis: answer 'what to test?', analyze the test basis to identify the testable features, identify and prioritize associated test conditions.
+    • Test design: Elaborating test conditions into test cases and other testware (e.g test charters,...). Identify coverage item, which serve as a guide to 
+      specify testcase inputs. Also define the test data requirements, design the test environment, and any other required infrastructure and tools
+    • Test implementation: Create test data, test suites/test procedure, create manual  and automated test scripts. Test execution schedule. Test environment is built
+      and verify to be setup correctly
+    • Test execution: Run the tests in accordance with the test execution schedule(test runs). Actual test results are compared with the expected results. 
+      The test results are logged, anomalies are analyzed to identify their likely causes. This analysis allows us to report the anomalies based on the failures observed.
+    • Test completion: Occurs at project milestones (e.g release, end of iteration, test level completion). Any testware that may be useful in the future is identified and
+      archived or handed over to the appropriate teams. The test environment is shut down to an agreed state. The test activities are analyzed to identify lessons learned
+      and improvements for future iterations, releases, or projects. A test completion report is created and communicated to the stakeholders.
+
+9.  Testware is created as output work products from the test activities above:
+    • Test planning work products include: test plan, test schedule, risk register, and entry and exit criteria. Test schedule, risk register and entry and exit criteria
+      are often part of test plan.
+    • Test monitoring and control work products: Test progress reports, documentation of control directives, and risk information.  
+    • Test analysis work products: prioritized test conditions, defect reports regarding defects in the test basis (if not fix directly)
+    • Test design work products: prioritized testcases, test charters, coverage items, test data requirements and test environment requirements
+    • Test implementation work products: Test procedures, automated test scripts, test suites, test data, test execution schedule, and test environment elements like stubs,
+      drivers, simulators, and service virtualizations.
+    • Test execution work products: Test logs, and defect reports 
+    • Test completion work products: Test completion report, action items for improvement 
+    
+10. Accurate traceability supports coverage evaluation, also useful to determine the impact of changes,...
+
+11. Roles in testing 
+    • Test manager: test process, test team and leadership of the test activites such as test planning, test monitoring, control and test completion.
+    • Testing role: focus on test activities such as test analysis, test design, test implementation and test execution.
+    
+12. Generic skills required for testing: Testing knowledge, thoroughness, carefulness, attention to details, good communication skills, active listening, analytical thinking,
+    critical thinking, creativity, technical knowledge, domain knowledge
+
+13. Whole team approach: The whole team approach improves team dynamics, enhances communication and collaboration within the team, and creates synergy by 
+    allowing the various skill sets within the team to be leveraged for the benefit of the project.
+    
+14. Independence of testing: 
+    • Main benefit of it is that independent testers are likely to recognize different kinds of failures and defects compared to developers
+      because of their different backgrounds, technical perspective. Moreover independent testers can verify, challenge, or disprove assumptions made by stackholders during
+      specification and implementation of the system.   
+    • Some drawbacks: lack of collaboration, communication problems, or an adversarial relationship with the development team. Independent testers may be seen as a bottlecheck
+      or be blamed for delays in release.
+      
+15. The choice of SDLC impacts on the
+    • Scope and timing of test activities (e.g test levels and test types)
+    • Level of detail of test documentation 
+    • Choice of test techniques and test approach 
+    • Extent of test automation
+    • Role and responsibilities of a tester 
+    In sequential development models (e.g waterfall, v-model,...) the executable code is usually created in the later phases, so typically dynamic testing cannot be performed
+    early in the SDLC. 
+    
+16. Testing as a Driver for Software Development:
+    • TDD - Test driven development: Directs the coding through test cases (instead of extensive software design). Tests are written first, then the code is written to satisfy the tests, 
+            and then the tests and code are refactored
+    • ATDD - Acceptance test driven development: Derives tests from acceptance criteria as part of the system design process. Tests are written before the part of the application is developed
+            to satisfy the tests.
+    • BDD - Tests are written in human language Given/When/Then - as human behaviour        
+    
+17. DevOps: Enables the teams to build, test and release high-quality code faster through devops pipeline
+
+18. Shift-Left approach: suggests that testing should be done earlier (not waiting for code to be implemented or for components to be integrated).
+    Some good practices that illustrate how to achieve a 'shift-left' testing:
+        • Reviewing the specification from perspective of testing to find potential defects on document.
+        • Writing test cases before the code is written.
+        • Using CI/CD as it comes with fast feedbackd and automated unit tests, compoment tests.
+        • Completing static analysis of source code prior to dynamic testing, or as part of an automated process.
+        • Performing non-functional testing starting at the component test level, where possible.
+        
+19. Retrospectives and Process Improvement: 
+    Retrospectives: The result of this meeting like what was success, what was not success, how to improve and retain success in the future. This result is normally part of test completion report.
+    Typical benefits of retrospective for testing:
+        • Increased test effectiveness/ efficiency (e.g by implementing suggestions for process improvement)
+        • Increased quality of testware (e.g by jointly reviewing the test processes)
+        • Team bonding and learning (e.g as deficiences in the extent and quality of the requirements could be addressed and solved)
+        • Better cooperation between development and testing
+    
+20. Test levels and test types:
+    Test level: Component testing, component integration testing, system testing, system integration testing, acceptance testing.
+    Test type: Functional testing, non-functional testing, black-box testing, white-box.
+    
+21. Maintenance testing: can be corrective, adaptive to changes in the environment or improve performance or maintainability. The scope of maintenance testing typically depends on
+    the degree of risk of the change, the size of the existing system, the size of the change.
+    
+22. Static testing can detect defects in the earliest phases of the SDLC, fulfilling the principle of early testing(see section 1.3). 
+    It can also identify defects which cannot be detected by dynamic testing (e.g., unreachable code, design patterns not implemented as desired, defects in non-executable work products)  
+    Help to reduce project cost as reduce the time and effort to be spent on fixing if many defects detected later in the project.
+    
+23. Differences between static testing and dynamic testing 
+        • Static and dynamic testing (with analysis of failures) can both lead to the detection of defects, 
+            however there are some defect types that can only be found by either static or dynamic testing.
+        • Static testing finds defects directly, while dynamic testing causes failures from which the 
+            associated defects are determined through subsequent analysis
+        • Static testing may more easily detect defects that lay on paths through the code that are rarely 
+            executed or hard to reach using dynamic testing
+        • Static testing can be applied to non-executable work products, while dynamic testing can only be 
+            applied to executable work products
+        • Static testing can be used to measure quality characteristics that are not dependent on executing 
+            code (e.g., maintainability), while dynamic testing can be used to measure quality characteristics 
+            that are dependent on executing code (e.g., performance efficiency) 
+            
+24. Feedback and Review process:
+    The activities in review process:
+        • Planning: scope of review, comprises the purpose, the work product to be reviewed, quality characteristics to be evaluated, areas to focus on, exit criteria, supporting information
+                    such as standards, effort and the timeframes for the review shall be defined.
+        • Review initiation: Make sure everyone and everything involed is prepared to start the review, make sure that every participant has access to the work product under review, understand
+                             their role and responsibilites and receives everything needed to perform the review.
+        • Individual review: Every reviewer access the quality of work product under review, identify anomalies, recommendations, questions by applying one or more review techniques (
+                             checklist-based reviewing, scenario-based reviewing,...). The reviewers log all their identified anomalies, recommendations, questions.
+        • Communication and analysis: analyze and discuss about all the anomalies identified in the individual review phase. The decision should be made on its status, ownership and required action.
+                                Also decide what the quality level of reviewed work product is and what follow-up actions are required. A follow-up review may be required to complete actions.
+        • Fixing and reporting: For every defect, defect report should be created so that corrective actions can be followed-up. Once the exit criteria are reached, the work product can be accepted.
+                                The review results are reported.
+
+25. Roles and Responsibilities in Reviews:
+        • Manager - decides what is to be reviewed and provides resources, such as staff and time for review 
+        • Author - creates and fixes the work product under review 
+        • Moderator (also known as the facilitator) - ensures the effective running of the review meetings, including mediation, time management, and a safe review environment in which everone can speak freely
+        • Scribe (also known as recorder) - collates anomalies from reviewers and records review information, such as decisions and new anomalies found during the review meeting 
+        • Reviewer - performs reviews. A reviewer maybe someone working on the project, a SME, or any other stakeholder.
+        • Review leader - takes overall responsibility for the review such as deciding who will be involved, and organizing when and where the review will take place
+        
+26. Review Types:
+        • Informal review - do not follow a defined process and do not require a formal documented output. The main object is detecting anomalies.
+        • Walkthrough - Led by author, can serve many objectives, such as evaluating quality and building confidence in the work product, educating reviewers, generating new ideas, motivating
+          and enabling authors to improve and detecting anomalies. Reviewers might perform an individual review before the walkthrough, but this is not required.
+        • Technical review: Is performed by technically qualified reviewers and led by a moderator. 
+        • Inspection: Is the most formal type of review, they follow the complete generic process. The main objectives is to find the maximum number of anomalies. Other objectives are to evaluate
+          quality, build confidence in the work product, and to motivate and enable authors to improve. Metrics are collected and used to improve the SDLC, including the inspection process.
+          In inspections, the author cannot act as the review leader or scribe.
+          
+27. Black-box test techniques - Also known as specification-based techniques 
+        Are based on an analysis of the specified behavior of the test object without reference to its internal structure. Therefore, the test cases are independent of how the software is implemented.
+        Some of black-box test techniques:
+            • Equivalence Partitioning - The partitions must not overlap and must be non-empty sets, to achieve 100% coverage, testcases must exercise all identified partitions (including valid and invalid partitions)
+                                         by covering each partition at least once. Coverage is measured as the number of partitions exercised by at least one test case, divided by the total number of 
+                                         identified partitions, and is expressed as a percentage.
+            • Boundary Value Analysis BVA - 
+            • Decision Table Testing 
+            • State Transition Testing 
+        
+28. White-box test techniques - Also known as structure-based techniques 
+        Are based on an analysis of the test object's internal structur and processing. As the test cases are dependent on how the software is designed, they can only be created after the design
+        or implementation of the test object.
+        Some of white-box test techniques:
+            • Statement testing: When 100% statement coverage is achieved, it ensures that all executable statements in the code have been exercised at least once. 100% statement coverage 
+                                 does not ensure that all the decision logic has been tested as, for instance, it may not exercise all the branches in the code.
+            • Branch testing: Branch coverage subsumes statement coverage. This means that any set of test cases achieving 100% branch coverage also achieves 100% statement coverage (but not vice versa)
+        
+29. Experience-based test techniques
+        Effectively use the knowledge and experience of testers for the design and implementation of test cases. The effectiveness of this technique depends heavily on the tester's skills.
+        Some of experience-based test techniques:
+            • Error Guessing: is used to anticipate the occurrence of errors, defects, and failures, based on the tester's knowledge, including 
+                    How the application has worked in the past
+                    The type of errors the developers tend to make and the types of defects that result from these errors 
+                    The types of failures that have occured in other, similar applications
+            • Exploratory testing: Tests are simultaneously designed, executed, and evaluated while the tester learns about the test object. Exploratory testing is sometimes conducte using 
+                                   session-based approach - conducted within a defined time-box. The tester uses a test charter containing test objectives to guide the testing.
+                                   Exploratory testing is useful when there are few or inadequate sepecifications or there is significant time pressuree on the testing. 
+                                   Exploratory testing will be more effective if the tester is experienced, has domain knowledge and has a high degree of essential skills like analytical skills,...
+            • Checklist-based testing: Tester designs, implements, and executes tests to cover test conditions from a checklist. Checklists can be built based on experience, knowledge about 
+                                       what is important for the user, or an understanding of why and how software fails.
+
+30. Collaboration-based Test Approaches
+    30.1 Collaborative user story writing: 
+            User stories have three critical aspects, called together the "3 C's": 
+                • Card - the medium describing a user story(e.g an index card, an entry in an electronic board)
+                • Conversation - explains how the software will be used (can be documented or verbal)
+                • Confirmation - the acceptance criteria 
+            The collaboration allows the team to obtain a shared vision of what should be delivered, by taking into account three perspectives: business, development and testing 
+            Good user story should be: Independent, Negotiable, Valuable, Estimable, Small and Testable. If a stakeholder does not know how to test a user story, this may indicate that 
+            the user story is not clear enough.
+    30.2 Acceptance Criteria:
+            Acceptance criteria are usually a result of the conversation.
+            There are several ways to write acceptance criteria for a user story, the most common formats are :
+                • Scenario-oriented (e.g Given/When/Then/ format used in BDD)
+                • Rule-oriented (e.g bullet point verification list, or tabulated form of input-output mapping)
+    30.3 Acceptance Test-driven Development (ATDD)
+    
+31. Purpose and Content of a Test Plan
+        A test plan describes the objectives, resources and processes for a test project. 
+        The typical content of a test plan includes:
+            • Context of testing(e.g scope, test objectives, constraint, test basis)
+            • Assumptions and constraints of the test project 
+            • Stakeholder(e.g roles, responsibilities, relevance of testing, hiring and training needs)
+            • Communication(e.g forms and frequency of communication, documentation templates)
+            • Risk register(e.g product risks, project risks)
+            • Test approach(e.g test levels, test types, test techniques, test deliverables, entry criteria and exit criteria,  independence of testing, metrics to be collected, test data 
+              requirement, test environment requirements, deviations from the organizational test policy and test strategy)
+            • Budget and schedule 
+
+32. Estimation Techniques
+        • Estimation based on ratios: data, figures are collected from previous projects within organization. For example, if in the previous project the development-to-test effort ratio 
+          was 3:2, and in the current project the development effort is expected to be 600 person-days, the test effort can be estimated to be 400 person-days.
+        • Extrapolation: For example, the team may extrapolate the test effort in the forthcoming iteration as the averaged effort from the last three iterations.
+        • Wideband Delphi: This is expert-based technique, experts make experience-based estimations. Planning Poker is a variant of Wideband Delphi, commonly used in Agile software development.
+        • Three-point estimation: Three estimations are made by the experts 
+                                            The most optimistic estimation(a).
+                                            The most likely estimation(m).
+                                            The most pessimistic estimation(b).
+                                  Then the final estimation(E) are calculated as E+-S (with E = (a + 4*m + b)/6 and SD = (b - a)/6)
+                                            For example: If the estimates(in person-hours) are a=6, m=9, and b=18, then the final estimation is 10+-2 person-hours (i.e between 8 and 12 person-hours)
+                                                         because E = (6 + 4x9 + 18)/6 = 10 and SD = (18 - 6)/6 = 2
+
+33. Test Case Prioritization
+        • Risk-based prioritization, where the order of test execution based on the test analysis. Test cases covering the most important risks are executed first.
+        • Coverage-based prioritization, where the order of test execution based on the coverage(e.g statement coverage).Testcases achieving the highest coverage are executed first.
+        • Requirements-based prioritization, where the order of test execution is based on the priorities of the requirements traced back to the corresponding test cases.
+          Requirement priorities are defined by stakeholders, testcases related to the most important requirements are executed first.
+    If a testcase with a higher priority is dependent on a testcase with a lower priority, the lower priority testcase must be executed first.
+    The order of test execution must also take into account the availability of resources like test tools, test environments or people that may only be available for a specific time window.
+    
+34. Test Pyramid
+        • The higher the layer, the lower the test granularity (the quality of including a lot of small details)
+        • Some of test pyramid models: 
+                • Cohn 2009: defines three layers -> unit tests, service tests, and UI tests 
+                • Another popular model: defines three layers -> unit (component) tests, integration (component integration) tests, and end-to-end tests. 
+                
+35. Testing Quadrants
+        • Purpose is to group the test levels with the appropriate test types, activities, test techniques and work products in the Agile software development.
+        • With four quadrants are defined:
+            • Quadrant Q1(technology facing, support the team): This quadrant contains component and component integration testing tests. These tests should be automated and included in the CI process
+            • Quadrant Q2(business facing, support the team): This quadrant contains functional tests, examples: user story tests, user experience prototypes, API testing, and simulations. These tests
+              check the acceptance criteria and can be manual or automated.
+            • Quadrant Q3(business facing, critique the product): This quadrant contains exploratory testing, usability testing, user acceptance testing. These tests are user-oriented and ofter manual.
+            • Quadrant Q4(technology facing, critique the product): This quadrant contains smoke tests and non-functional tests (except usability tests). These tests are often automated.
+
+36. Risk Management: The main risk management activities are 
+        • Risk analysis (consisting of risk identification and risk assesment)
+        • Risk control (consisting of risk mitigation
+    
+37. Risk Definition and Risk Attributes
+        Risk is a potential event, hazard, threat, or situation whose occurrence causes an adverse effect. 
+        A risk can be characterized by two factors: 
+            • Risk likelihood - The probability of the risk occurrence(greater than zero and less than one)
+            • Risk impact(harm) - The consequences of this occurrence 
+        These two factors express the risk level, which is a measure for the risk. The higher the risk level, the more important is its treatment.
+
+38. Project Risks and Product Risks 
+        • Project risks: Are related to the management and control of the project. Project risks include:
+                                • Organization issues(e.g delays in work products deliveries, inaccurate estimates, cost-cutting)
+                                • People issues(e.g insufficient skills, conflicts, communication problems, shortage of staff)
+                                • Technical issues(e.g scope creep, poor tool support)
+                                • Supplier issues(e.g third-party delivery failure, bankruptcy of the supporting company)
+                        Project risks, when they occur, may have an impact on the project schedule, budget or scope, which affects the projecct's ability to achieve its objectives 
+        • Product risks: Are related to the product quality characteristics. Example of product risks include: Missing or wrong functionality, incorrect calculations, runtime errors,
+                         poor architecture, inefficient algorithms, inadequate response time, poor user experience, security vulnerabilities. 
+                         Product risks, when they occur, may result in various negative consequences, including:
+                                • User dissatisfaction
+                                • Loss of revenue, trust, reputation
+                                • Damage to third parties
+                                • High maintenance costs, overload of the helpdesk
+                                • Criminal penalties
+                                • In extreme cases, physical damage, injuries or even death
+                                
+39. Product risk analysis 
+            Product risk analysis consists of risk identification and risk assessment. 
+            Risk identification is about generating a comprehensive list of risks. Stakeholders can identify risks by using various techniques and tools (e.g brainstorming, workshop,...)
+            Risk assessment involves: Categorization of identified risks, determining their risk likelihood, risk impact and level, prioritizing, and proposing a way to handle them.
+            Risk assessment can use a quantitative or qualitative approach, or a mix of them. In the quantitative approach the risk level is calculated as the multiplication of risk likelihood and risk impact.
+            In the qualitative approachf the risk level can be determined using a risk matrix.
+            Product risk analysis may influence the thoroughness and scope of testing. Its results are used to:
+                    • Determine the scope of testing to be carried out
+                    • Determine the test level and propose the test type to be performed
+                    • Determine the test techniques to be employed and the coverage to be achieved 
+                    • Estimate the test effort required for each task 
+                    • Prioritize testing in a attempt to find the critical defects as soon as possible 
+                    • Determine whether any activities in addition to testing to be employed to reduce risks 
+
+40. Product risk control 
+            Product risk control consists of risk mitigation and risk monitoring 
+            The aim of risk monitoring is to make sure the risk mitigation actions are effective
+            Actions that can be taken to mitigate the product risks by testing are as below:
+                    • Select the tester with the right level of experience and skill, suitable for a given risk type 
+                    • Apply an appropriate level of independence of testing 
+                    • Perform review and static analysis 
+                    • Apply the appropriate test techniques and coverage levels 
+                    • Apply the apropriate test types                     
+                    • Perform dynamic testing, including regression testing 
+
+41. Test monitoring, test control and test completion 
+            Test monitoring is concerned about gathering information about testing which is used to access the test progress, and to measure whether the exit criteria are satisfied 
+            Test control uses the information from test monitoring to provide guidance, corrective actions to achieve the most effective and efficient testing, such as:
+                    • Reprioritizing tests when an identified risk becomes an issue 
+                    • Re-evaluating whether a test item meets entry criteria or exit criteria due to rework 
+                    • Adjusting the test schedule to address a delay in the delivery of the test environment 
+                    • Adjusting new resource when and where needed 
+            Test completion collects data from completed test activities to consolidate experience, testware and any other relevant information. Test completion activities occur at project milestones
+            
+42. Metrics used in Testing 
+            Test metrics are gathered to show progress against the planned test schedule and budget, the current quality of the test object, and the effectiveness of the test activities with respect to 
+            the test objectives or an iterition goal.
+            Common test metrics include:
+                    • Project progress metrics (task completion, resource usage, test effort)
+                    • Test progress metrics (test case implemetation progress, test environment preparation progress, test execution in terms of passed/failed, run/not run, test execution time,...)
+                    • Product quality metrics (availability, response time, mean time to failure)
+                    • Defect metrics (number and priorities of defect found/fixed, defect detection percentage)
+                    • Risk metrics (residual risk metrics)
+                    • Coverage metrics (requirement coverage, code coverage)
+                    • Cost metrics (cost of testing, organizational cost of testing)
+                    
+43. Test progress report and test competion report 
+            Test progres report: Supports the ongoing test control and must provide enough information to make modifications to test schedule, resource, test plan.                    
+                                 Test progress report are usually generated on a regular basis (daily, weekly, ...) and includes the following (Testing period, testing progress, impediments for testing,...)
+            Test completion report is prepared during test completion and usually contains these one (Test summary, testing and product quality based on the original test plan like test objectives, exit criteria,...,
+                                                                                                      deviations from the test plan, testing impediments and workarounds, unmitigated risks, defect not fixed, lession learned,...)
+                                                                                                      
+44. Communicating the status of Testing 
+                • Verbal communication with team members and stakeholders 
+                • Dashboards
+                • Electronical communication channels (email, chat,...)
+                • Online documentation 
+                • Formal test report 
+                
+45. Configuration management 
+            In testing, CM provides a discipline for identifying, controlling, tracking work products such as test plans, test strategies, test conditions, testcases, test scripts, test results, test logs and 
+            test reports, version of test environments as configuration items.
+            To properly support testing, CM ensures:
+                    • All configurations items, including test items (individual parts of test object) are uniquely identified, version controlled, tracked for changes, and related to other configuration items
+                    so that traceability can be maintained throughout the test process.
+                    • All identified documentation and software items are referenced unambigously in testware 
+
+46. Defect management 
+
+47. Testing tools 
+
+48. Benefits and Risks of Test Automation
