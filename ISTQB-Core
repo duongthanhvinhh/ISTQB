@@ -106,7 +106,7 @@
     Some good practices that illustrate how to achieve a 'shift-left' testing:
         • Reviewing the specification from perspective of testing to find potential defects on document.
         • Writing test cases before the code is written.
-        • Using CI/CD as it comes with fast feedbackd and automated unit tests, compoment tests.
+        • Using CI/CD as it comes with fast feedback and automated unit tests, compoment tests.
         • Completing static analysis of source code prior to dynamic testing, or as part of an automated process.
         • Performing non-functional testing starting at the component test level, where possible.
         
@@ -197,7 +197,7 @@
                     How the application has worked in the past
                     The type of errors the developers tend to make and the types of defects that result from these errors 
                     The types of failures that have occured in other, similar applications
-            • Exploratory testing: Tests are simultaneously designed, executed, and evaluated while the tester learns about the test object. Exploratory testing is sometimes conducte using 
+            • Exploratory testing: Tests are simultaneously designed, executed, and evaluated while the tester learns about the test object. Exploratory testing is sometimes conducted using 
                                    session-based approach - conducted within a defined time-box. The tester uses a test charter containing test objectives to guide the testing.
                                    Exploratory testing is useful when there are few or inadequate sepecifications or there is significant time pressuree on the testing. 
                                    Exploratory testing will be more effective if the tester is experienced, has domain knowledge and has a high degree of essential skills like analytical skills,...
@@ -270,7 +270,7 @@
 
 36. Risk Management: The main risk management activities are 
         • Risk analysis (consisting of risk identification and risk assesment)
-        • Risk control (consisting of risk mitigation
+        • Risk control (consisting of risk mitigation)
     
 37. Risk Definition and Risk Attributes
         Risk is a potential event, hazard, threat, or situation whose occurrence causes an adverse effect. 
@@ -285,7 +285,7 @@
                                 • People issues(e.g insufficient skills, conflicts, communication problems, shortage of staff)
                                 • Technical issues(e.g scope creep, poor tool support)
                                 • Supplier issues(e.g third-party delivery failure, bankruptcy of the supporting company)
-                        Project risks, when they occur, may have an impact on the project schedule, budget or scope, which affects the projecct's ability to achieve its objectives 
+                        Project risks, when they occur, may have an impact on the project schedule, budget or scope, which affects the project's ability to achieve its objectives 
         • Product risks: Are related to the product quality characteristics. Example of product risks include: Missing or wrong functionality, incorrect calculations, runtime errors,
                          poor architecture, inefficient algorithms, inadequate response time, poor user experience, security vulnerabilities. 
                          Product risks, when they occur, may result in various negative consequences, including:
@@ -301,7 +301,7 @@
             Risk identification is about generating a comprehensive list of risks. Stakeholders can identify risks by using various techniques and tools (e.g brainstorming, workshop,...)
             Risk assessment involves: Categorization of identified risks, determining their risk likelihood, risk impact and level, prioritizing, and proposing a way to handle them.
             Risk assessment can use a quantitative or qualitative approach, or a mix of them. In the quantitative approach the risk level is calculated as the multiplication of risk likelihood and risk impact.
-            In the qualitative approachf the risk level can be determined using a risk matrix.
+            In the qualitative approach the risk level can be determined using a risk matrix.
             Product risk analysis may influence the thoroughness and scope of testing. Its results are used to:
                     • Determine the scope of testing to be carried out
                     • Determine the test level and propose the test type to be performed
@@ -342,8 +342,8 @@
                     • Coverage metrics (requirement coverage, code coverage)
                     • Cost metrics (cost of testing, organizational cost of testing)
                     
-43. Test progress report and test competion report 
-            Test progres report: Supports the ongoing test control and must provide enough information to make modifications to test schedule, resource, test plan.                    
+43. Test progress report and test completion report 
+            Test progress report: Supports the ongoing test control and must provide enough information to make modifications to test schedule, resource, test plan.                    
                                  Test progress report are usually generated on a regular basis (daily, weekly, ...) and includes the following (Testing period, testing progress, impediments for testing,...)
             Test completion report is prepared during test completion and usually contains these one (Test summary, testing and product quality based on the original test plan like test objectives, exit criteria,...,
                                                                                                       deviations from the test plan, testing impediments and workarounds, unmitigated risks, defect not fixed, lession learned,...)
@@ -360,7 +360,7 @@
             test reports, version of test environments as configuration items.
             To properly support testing, CM ensures:
                     • All configurations items, including test items (individual parts of test object) are uniquely identified, version controlled, tracked for changes, and related to other configuration items
-                    so that traceability can be maintained throughout the test process.
+                        so that traceability can be maintained throughout the test process.
                     • All identified documentation and software items are referenced unambigously in testware 
 
 46. Defect management 
